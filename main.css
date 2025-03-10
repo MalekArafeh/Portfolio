@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.396);
+    width: 100%;
+}
+.nav-content , p{
+    color: rgba(209, 213, 219, 1);
+    font-family: Inter;
+}
+
+.nav-content:hover{
+    color: white;
+
+}
+.logo:hover{
+    color: rgba(209, 213, 219, 1);
+}
+.logo{
+    font-family: 'Kapakana', sans-serif;
+    font-size: 1.9rem;
+    color: white;
+}
+.navbar-toggler-icon{
+    color: white;
+}
+
+.first  .container{
+    /* height: 100vh; */
+}
+.first{
+    background-color: black;
+    padding-top: 7.5rem;
+    padding-bottom: 7rem;
+}
+
+
+.grid-item{
+    background-color: red;
+    gap: 5px;
+}
+h1{
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(249, 250, 251, 1);
+}
+.myphoto{
+    
+    display: block;
+    position: relative;
+
+
+}
+.rectangle{
+    position: absolute;
+top: 5%;  
+  left: 20%;
+    opacity: 0.7; /* Adjust opacity */
+}
+.greendot{
+    color: rgb(17, 205, 0);
+    font-weight:unset;
+}
+.row{
+    padding-bottom: 3rem;
+}
+.first > .container
+{
+
+}
+.skill{
+    display: flex;
+justify-content:  center;
+width: 100%;}
