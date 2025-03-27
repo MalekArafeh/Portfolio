@@ -1,6 +1,9 @@
 body{
     background-color: rgb(0, 0, 0);
+
 }
+
+
 .navbar{
     background-color: rgba(0, 0, 0, 0.396);
     width: 100%;
@@ -10,9 +13,18 @@ body{
     font-family: Inter;
 }
 
+
 .nav-content:hover{
     color: white;
 
+}
+
+.nav-link:hover, .a:hover{
+    color:aqua;
+
+}
+.col-4:hover{
+    color: aqua;
 }
 .logo:hover{
     color: rgba(209, 213, 219, 1);
@@ -25,14 +37,17 @@ body{
 .navbar-toggler-icon{
     color: white;
 }
-
-.first  .container{
-    /* height: 100vh; */
+.navbar-nav .nav-link.active{
+    color: aqua;
 }
+.active{
+    color: aqua;
+}
+
 .first{
     background-color: black;
     padding-top: 7.5rem;
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -66,11 +81,196 @@ top: 5%;
 .row{
     padding-bottom: 3rem;
 }
-.first > .container
-{
 
-}
 .skill{
     display: flex;
 justify-content:  center;
 width: 100%;}
+
+.skills{
+    padding-bottom: 20px;
+}
+
+
+.row .col-4.col-lg-2{
+
+
+  padding-bottom: 12px;
+
+}
+.row .col-4.col-lg-2 img{
+    height: 70px;
+    width: 70px;
+    vertical-align: middle;
+    
+
+}
+
+.experiences{
+    background-color: rgba(17, 24, 39, 1);
+    padding-top: 2rem;
+}
+
+.experience{
+    display: flex;
+justify-content:  center;
+width: 100%;}
+
+.experiences .container > .row{
+    background-color: rgba(31, 41, 55, 1);
+}
+
+.col-md-4.col-sm-12 > ul,h5{
+    font-size: 16px;
+    color:rgba(209, 213, 219, 1) ;
+    font-family: Inter;
+
+}
+.col-md-4.col-sm-12 >h3{
+    font-family: Inter;
+    color:rgba(209, 213, 219, 1) ;
+    font-weight: bold;
+}
+.fitwise{
+    height:250px;
+}
+.fit{
+    background-color: rgba(55, 65, 81, 1); padding-top: 40px; padding-bottom: 40px; overflow: hidden; display: flex; justify-content:center; align-items: center; border-start-start-radius: 17px; border-bottom-left-radius: 17px;
+}
+.fittext{
+    background-color:rgba(31, 41, 55, 1); border-end-end-radius: 17px; border-start-end-radius: 17px;
+}
+
+.ovs{
+    border-radius: 0px;
+    border-end-end-radius: 17px; border-start-end-radius: 17px;
+
+}
+.ovstext{
+    border-radius: 0px;
+    border-start-start-radius: 17px; border-bottom-left-radius: 17px;
+}
+
+
+.footer{
+    background-color: rgba(17, 24, 39, 1);
+
+
+}
+
+@media only screen and (max-width: 700px) {
+   
+
+.col-md-4.col-sm-12 {
+    padding-bottom: 20px;
+
+}
+.col-md-4.col-sm-12 h3{
+    font-size: 18px;
+}
+.row.pt-5.pr-5 .col-md-4:nth-child(3){
+    order: 2;
+}
+.row.pt-5.pr-5 .col-md-4:nth-child(2){
+    order: 3;
+}
+.fitwise{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.fit, .ovs{
+    border-radius: 0%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-bottom: 24px
+
+
+}
+.fittext , .ovstext{
+    border-radius: 0%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.row .ovstext:nth-child(1){
+    order: 2;
+}
+.col-lg-4.col-sm-12{
+    display: flex;
+    justify-content: center;
+}
+.rectangle{
+    left: auto;
+    width: 320px; 
+    top: 2%;
+}
+.myphoto{
+    border: 10px solid black;
+}
+.row .one:nth-child(1){
+    order: 2;
+}
+.row .two:nth-child(2){
+    order: 1;
+}
+.two{
+    margin-bottom: 50px;
+}
+  
+.first{
+    padding-bottom: 0;
+}
+
+.bckspace{
+    visibility: hidden;
+}
+}
+
+.t1 , .two{
+    opacity: 0;
+    transition:all 4s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);                  /* Remove blur */
+    transform: translateX(0);
+}
+
+
+.effect{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+/* .skills > .container > .row.pt-5{
+    opacity: 0; /* Start with opacity 0 */
+    /* transform: translateX(-100%); Start off-screen to the left */
+    /* filter: blur(5px); Start with blur effect */
+    /* transition: all 1s ease-in-out;   */
+    /* } */ 
+    .here , .project1,.project2, .footer{
+        --animate-duration: 2s; /* Change to 3s, 4s, etc., if needed */
+        opacity: 0; /* Start hidden */
+
+    }
+    
+    .animate__animated {
+        opacity: 1; /* Make it visible when animation is applied */
+    }
+    .experience-effect1,.experience-effect2{
+        opacity: 0; /* Start hidden */
+
+        --animate-duration: 1s; /* Change to 3s, 4s, etc., if needed */
+
+    }
+
+
+
+
+
+
+
+
+    
+

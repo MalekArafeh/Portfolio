@@ -12,33 +12,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
-    
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg fixed" style="overflow: hidden; position: fixed;">
+    <nav class="navbar navbar-expand-lg " style="overflow:inherit; position: fixed; z-index: 1000;  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);">
         <div class="container-fluid">
-          <a class="navbar-brand nav-content logo" href="#">MalekArafeh</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="White" class="bi bi-list" viewBox="0 0 16 16">
+          <a class="navbar-brand nav-content logo" style="font-family: 'Kapakana', sans-serif;" href="index.html">MalekArafeh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="White" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
               </svg>
             </button>
           <div class="collapse navbar-collapse  " id="navbarNav">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link nav-content" aria-current="page" href="#">About</a>
+              <li class="nav-item active">
+                <a class="nav-link nav-content active" aria-current="page" href="#first">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-content" href="#">Work</a>
+                <a class="nav-link nav-content" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-content" href="#">Tesimonials</a>
+                <a class="nav-link nav-content" href="#experiences">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-content "href="#" aria-disabled="true">Contact</a>
+                <a class="nav-link nav-content "href="#projects" aria-disabled="true">Work</a>
               </li>
-              <li class="nav-item ">
+              <li class="nav-item">
+                <a class="nav-link nav-content "href="#footer" aria-disabled="true">Contact</a>
+              </li>
+              <li class="nav-item bckspace">
                 <a class="nav-link  nav-content " aria-disabled="true">|</a>
 
               </li>
@@ -51,14 +63,18 @@
         </div>
       </nav>
 
-    <section class="first">
+    <section class="first" id="first">
 
       <div class="container">
 
         <div class="row" style="height: max-content;">
-          <div class="col-lg-8 col-sm-12 pr-5">
+          <div class="col-lg-8 col-sm-12 pr-5 one">
               <h1 id="t">Hi, I’m Malek 👋</h1>
-              <p id="t">I'm a full stack developer (React.js & Node.js) with a focus on creating (and occasionally designing) exceptional digital experiences that are fast, accessible, visually appealing, and responsive. Even though I have been creating web applications for over 7 years, I still love it as if it was something new.</p>
+              <p id="t1" class="t1">A passionate and detail-oriented Software Engineer with a bachelor’s degree in computer 
+                engineering. Experienced in full-stack web development, object-oriented programming, data 
+                structures, and algorithm design. Proficient in Laravel, PHP, JavaScript,React, SQL, and C++. 
+                Enthusiastic about solving complex problems, optimizing system performance, and building 
+                scalable applications.</p>
               <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
@@ -83,9 +99,9 @@
                 </div>
               </div>   
             </div>
-          <div class="col-lg-4 col-sm-12 " style="position: relative;">            
+          <div class="col-lg-4 col-sm-12 two" style="position: relative;">            
               <img class="rectangle" src="assets/Background.png" alt="">            
-              <img class="myphoto" src="assets/my photo 1.png" alt="">
+              <img class="myphoto" style="border: 10px solid black;" src="assets/my photo 1.png" alt="">
 
           </div>
 
@@ -94,28 +110,217 @@
       </div>
 
     </section>  
-    <section class="Skills">
+    <section class="skills" id="skills">
       <div class="container">
         <div class="skill">
                   <button type="button" class="btn btn-secondary disabled" style="width: 7rem;">Skills</button><br>
 
-        </div>                  <h3 class="skill">The skills, tools and technologies I am really good at:</h3>
+        </div>                
+         <h3 class="skill nav-content pt-3">The skills, tools and technologies I am really good at:</h3>
 
+        <div class="row pt-5 here" style="display: flex; justify-content: center; align-items: center;">
+          <div class="col-4 col-lg-2" >
+                <img src="assets/JS.jpg" style="width: 60px; height: 60px;" alt="">                
+
+          </div>
+          <div class="col-4 col-lg-2 ">
+            <img src="assets/bootstrap.png" class="" alt="">
+            
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/figma.png" alt="">
+            
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/icon-nodejs.png" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/icon-expresss.png" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/icon-react.png" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/Mysql.png" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/postman-icon.svg" style="height: 60px; width: 60px;" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/Laravel.png" alt="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/icon-cypress.png" alt="" srcset="">
+          </div>
+          <div class="col-4 col-lg-2">
+            <img src="assets/PHP.png" style="height: 60px;width: 90px;" alt="" srcset="">
+          </div>
+          <div class="col-4  col-lg-2">
+            <img src="assets/Git.png" alt="">
+          </div>
+        </div> 
       </div>
     </section>
 
 
+  <section class="experiences pb-5 " id="experiences">
+
+    <div class="container">
+
+      <div class="experience">
+              <button type="button" class="btn btn-secondary disabled" style="width: 8rem; height: 3rem;">Experience</button>
+
+      </div>
+      <h3 class="skill nav-content pt-3 ">Here is a quick summary of my most recent experiences:</h3>
+
+      <div class="row pt-5 pr-5 mb-4 mt-5 experience-effect1" style="border-radius: 10px;">
+        <div class="col-md-4 col-sm-12 "> <img src="assets/HTU White Logo.5f5304d1.svg" style="height: 60px;" alt="" srcset=""></div>
+        <div class="col-md-4 col-sm-12 "> 
+          <h3 >Manual & Automation Trainee</h3>
+          <ul>
+            <li>Analyzed requirements, specifications, and design documents to ensure 
+              completeness and accuracy. </li>
+            <li>Created and executed test cases for web applications, documenting and 
+              tracking defects in Jira. </li>
+            <li>Used Postman for API testing, validating endpoints, responses, and error 
+              handling.</li>
+            <li>Collaborated with developers to debug and resolve software issues, improving 
+              system reliability.</li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12"> <h5 class=" text-end " > Jan 2025 - Present</h5></div>
+
+      </div>
+      <div class="row pt-5 pr-5 experience-effect2" style="border-radius: 10px;">
+        <div class="col-md-4 col-sm-12 "> <img src="assets/Orange_logo.svg.png" style="height: 60px; " alt="" srcset=""></div>
+        <div class="col-md-4 col-sm-12 "> 
+          <h3 >Laravel Developer Trainee</h3>
+          <ul>
+            <li>Collaborated with a team to design and develop web pages using the Laravel 
+              framework. </li>
+            <li>Designing User Interface by using tools like Figma and Adobe Photoshop. </li>
+            <li>Prepared and analyzed Software Requirements Specification (SRS) to ensure 
+              high-quality software requirements. 
+              </li>
+            <li>Working with team by using Git.</li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12"> <h5 class= "text-end " > Oct 2024 - Jan 2025</h5></div>
+
+      </div>
+
+    </div>
 
 
+  </section>
+
+
+  <section class="projects pb-5" id="projects">
+
+    <div class="container">
+      <div class="experience pt-5">
+        <button type="button" class="btn btn-secondary disabled" style="width: 6rem; height: 2rem;">Work</button>
+
+      </div>
+      <h3 class="skill nav-content pt-3 pb-5">Some of the noteworthy projects I have built:</h3>
+      <div class="row project1" style="border-radius: 17px;">
+        <div class="col-lg-6 col-sm-12 fit">
+            <img src="assets/FitWise.png" class="fitwise" style="width:min-content;  border-radius:7px; display: flex; justify-content: center;" alt="" srcset="">
+        </div>
+        <div class="col-lg-6 col-sm-12 fittext pt-4" style="">
+          <h3 style="color:rgba(209, 213, 219, 1); font-weight: bolder; padding-bottom: 10px;" ;
+;">FitWise</h3>
+          <p style="font-family: Inter;">
+            FitWise Gym is a web-based fitness management system developed using HTML, CSS, and JavaScript for the front end and PHP Laravel for the back end. The platform helps users manage gym memberships, track workout plans, and access fitness-related services. It provides features such as user authentication, class scheduling, and membership management, offering a seamless experience for both gym members and administrators.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="row project2" style="border-radius: 17px;">
+        <div class="col-lg-6 col-sm-12 fittext ovstext pt-4" style="">
+          <h3 style="color:rgba(209, 213, 219, 1); font-weight: bolder; padding-bottom: 9px;" >Online Voting System</h3>
+          <p style="font-family: Inter;">
+            Online Voting System (OVS) is a web-based platform designed to facilitate secure and efficient electronic voting. Developed using HTML, CSS, and JavaScript for the front end and PHP for the back end, OVS allows users to cast their votes online while ensuring integrity, authentication, and transparency in the voting process.          </p>
+        </div>
+        
+        
+        
+        <div class="col-lg-6 col-sm-12 fit ovs">
+            <img src="assets/OnlineVoting.png" class="fitwise" style="width:min-content;  border-radius:7px; display: flex; justify-content: center;" alt="" srcset="">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="footer">
+    <div class="experience pt-5">
+      <button type="button" class="btn btn-secondary disabled" style=" height: 3rem;">Get in touch </button>
+
+    </div>
+
+    <h3 class="skill nav-content pt-3 pb-5 text-center">What’s next? Feel free to reach out to me if you're looking for<br> a developer, have a query, or simply want to connect.</h3>
+
+    <div class="text-center" style="font-family: Inte; color: antiquewhite;">
+
+      <h3>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+          <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+          <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+        </svg>  malekarafeh2@gmail.com
+      </h3>
+
+      <h3><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+      </svg> +962797615856</h3>
+    </div>
+    <p style="font-family: Inter; color: rgba(209, 213, 219, 1); text-align: center;">You may also find me on these platforms!</p>
+    <div class="text-center" style="font-family: Inter; color: antiquewhite; display: flex; align-items: center; justify-content: center;">
+          <div class="row d-flex" style="width: 100px; ">
+            <div class="col-4">
+              <a href="http://www.linkedin.com/in/malek-arafeh"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#fafafa" d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>   
+              </a>
+              
+            </div>
+            <div class="col-4">
+              <a href="https://github.com/MalekArafeh"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="White" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg></a>
+            </div>
+            <div class="col-4">
+              <a href="https://web.facebook.com/profile.php?id=100009662295286"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg></a>
+            </div>
+          </div>
+        </div>
+
+  </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
+    
     <script src="t.min.js"></script>
-
     <script>
       $('#t').t();
+
+      
     </script>
-  </body>
+
+<script src="main.js"></script>
+<script src="animate.js"></script>
+
+
+
+ </body>
 </html>
